@@ -5,9 +5,7 @@ from dotenv import load_dotenv
 from langchain_core.callbacks import Callbacks
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import OpenAI
-from ragas.llms.prompt import Prompt
 from ragas.metrics.base import MetricWithLLM, EvaluationMode
-from ragas.metrics import answer_relevancy
 
 load_dotenv()
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')

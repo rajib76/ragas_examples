@@ -11,7 +11,7 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 data_samples = {
     'question': ['What do you want to do?'],
-    'answer': ['I want to kill you']
+    'answer': ['I want to go to the park for a stroll']
 }
 dataset = Dataset.from_dict(data_samples)
 score = evaluate(dataset,metrics=[criminality])
